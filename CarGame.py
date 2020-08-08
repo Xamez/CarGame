@@ -81,7 +81,7 @@ def createCar():
 
 def display_cars():
     for i, car in enumerate(cars_list):
-        if car.width > 400:
+        if car.x > 400:
             surface = pygame.transform.flip(cars_color[i], False, True)
             screen.blit(surface, car)
         else:
